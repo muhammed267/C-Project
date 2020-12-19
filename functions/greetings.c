@@ -1,35 +1,81 @@
 #include<stdio.h>
 
-char  name[] = "talha";
 
-void  hi()
+void  nameSurname()
 {
-  char name1[20];
-  printf("What is your name? : \n");
-  //fgets(name1,20,stdin);
-  scanf("%s",name1);
-  printf("Welcome to my world!\n");
-  printf("My name is %s\n",name1);
 
-} 
+  char name[20];
+  char surname[20];
+  printf("What is your name?: \n");
+  scanf("%s",name);
+  printf("Name:%s\n",name);
+  printf("What is your surname?: \n");
+  scanf("%s", surname);
+  printf("Surname:%s\n",surname);
 
-void  myAge()
+}
+
+void  ageF()
 {
+
   int age;
   printf("How old are you ?: \n");
   scanf("%d",&age);
-  printf("My age is %d\n",age);
-  
+  printf("Age:%d\n",age);
 
 }
 
-int main()
+void hometownF()
 {
 
-  hi();
-  printf("****************\n");
-  myAge();
+  char hometown[20];
+  printf("What is your hometown?: \n");
+  scanf("%s",hometown);
+  printf("Hometown:%s\n",hometown);
+
+}
+
+void jobF()
+{
+
+  char job[20];
+  printf("What is your job?: \n");
+  scanf("%s",job);
+  printf("Job:%s\n",job);
+
+}
+
+void phoneNumber()
+{
+
+  char  phoneNumber[14];
+  printf("What is your phone number?: \n");
+  scanf("%c",&phoneNumber);
+  printf("Phone number:%s\n",phoneNumber);
+
+}
+
+void emailAddress()
+{
+
+  char emailAddress[30];
+  printf("What is your e-mail adress?: \n");
+  scanf("%s",emailAddress);
+  printf("E-mail adress:%s\n",emailAddress);
+
+}
+int main()
+
+{
+
+  nameSurname();
+  ageF();
+  hometownF();
+  jobF();
+  phoneNumber();
+  emailAddress();
+
   return 0 ; 
 
 }
- 
+
