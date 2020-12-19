@@ -1,5 +1,15 @@
 #include<stdio.h>
 
+void  ageF()
+{
+
+  int age;
+  printf("How old are you ?: \n");
+  scanf("%d",&age);
+  printf("Age:%d\n",age);
+
+}
+
 
 void  nameSurname()
 {
@@ -12,18 +22,9 @@ void  nameSurname()
   printf("What is your surname?: \n");
   scanf("%s", surname);
   printf("Surname:%s\n",surname);
-
+  ageF();
 }
 
-void  ageF()
-{
-
-  int age;
-  printf("How old are you ?: \n");
-  scanf("%d",&age);
-  printf("Age:%d\n",age);
-
-}
 
 void hometownF()
 {
@@ -48,9 +49,9 @@ void jobF()
 void phoneNumber()
 {
 
-  char  phoneNumber[14];
+   char phoneNumber[14];
   printf("What is your phone number?: \n");
-  scanf("%c",&phoneNumber);
+  scanf("%s",phoneNumber);
   printf("Phone number:%s\n",phoneNumber);
 
 }
@@ -69,7 +70,7 @@ int main()
 {
 
   nameSurname();
-  ageF();
+  // ageF();
   hometownF();
   jobF();
   phoneNumber();
