@@ -1,39 +1,45 @@
 #include<stdio.h>
 
-void maximum(int x,int y,int z)
+int maximum(int x,int y,int z)
 {
+  int max;
+
   if(x>y && x>z)
   {
 
-    printf("maximum number: %d\n ",x);
+    max=x;
 
   }
 
   else if (y>z)
   {
 
-    printf("maximum number: %d \n",y);
+    max=y;
 
   }
 
   else
   {
 
-    printf("maximum number: %d\n ",z);
+   max=z;
 
   }
 
-
+  return max;
 }
 
 int main()
 {
 
   int a,b,c;
-  printf("Please enter 3 numbers\n: ");
-  scanf("%d %d %d",&a,&b,&c);
-  maximum(a,b,c);
-
+  printf("Please enter 3 numbers \n");
+  printf("Number first  : ");
+  scanf("%d",&a);
+  printf("Number second : ");
+  scanf("%d",&b);
+  printf("Number third  : ");
+  scanf("%d",&c);
+  printf("Maximum number is : %d\n",maximum(a,b,c));
   return 0;
 
 }
